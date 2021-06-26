@@ -1,5 +1,5 @@
 # Company departments
-## [Demo](https://shop-nassar.netlify.com/) ##
+## [Demo](https://company-departments.vercel.app) ##
 ## Quick start
 - Install dependencies `npm install`
 - Run application in development `npm start` Now you can open localhost:4200 in your borwser
