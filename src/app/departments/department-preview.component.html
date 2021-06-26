@@ -1,0 +1,5 @@
+<a [routerLink]="department.path" routerLinkActive="department--active" class="department">
+    <fa-icon *ngIf="isIcon(department.topIcon)" class="department__top-icon" [icon]="department.topIcon"></fa-icon>
+    <h3 class="department__name">{{department.name}}</h3>
+    <img class="department__bottom-icon" [src]="'assets/images/' + department.bottomIcon + '.png'" [alt]="department.name" />
+</a>

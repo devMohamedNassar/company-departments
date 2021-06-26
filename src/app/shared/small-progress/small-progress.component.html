@@ -1,0 +1,9 @@
+<div class="small-progress">
+    <h3 class="small-progress__title">{{title}}</h3>
+    <div class="small-progress__wrap">
+        <div class="small-progress__bg">
+            <div class="small-progress__bar {{color}}" [ngStyle]="{'width.%': percentage}"></div>
+        </div>
+        <div class="small-progress__percentage">{{percentage}}%</div>
+    </div>
+</div>

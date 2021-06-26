@@ -1,0 +1,25 @@
+<div class="big-progress">
+    <div class="big-progress__text">
+        <h3 class="big-progress__title">{{title}}</h3>
+        <span class="big-progress__growth-rate">
+            <span *ngIf="growthRate != '0'" class="big-progress__growth-rate--green">{{growthRate}}% </span>
+            <span *ngIf="growthRate == '0'" class="big-progress__growth-rate--gray">{{growthRate}}% </span>
+            Since last month
+        </span>
+    </div>
+    <div class="big-progress__bg {{color}}" #bg>
+        <div class="big-progress__actual-bar {{color}}" [ngStyle]="{'width.%': actualPercentage}">
+            <h3 class="big-progress__actual-percentage" [ngStyle]="setStyle(bg) && {'right.px': 90}">
+                <span class="big-progress__percentage">{{actualPercentage}}% </span>
+                <span class="big-progress__gray-text">Actual</span>
+            </h3>
+        </div>
+        <div class="big-progress__planned-wrap" [ngStyle]="{'left.%': plannedPercentage}">
+            <div class="actual-planned__vertical-bar"></div>
+            <h3 class="big-progress__actual-planned">
+                <span class="big-progress__percentage">{{plannedPercentage}}% </span>
+                <span class="big-progress__gray-text">planned</span>
+            </h3>
+        </div>
+    </div>
+</div>
